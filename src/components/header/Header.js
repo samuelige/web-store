@@ -9,7 +9,7 @@ import './Header.css'
 const Header = () => {
     return (
         <div className="header">
-            <h1 className="header__logo">Saige <span className="text-primary">Mall</span></h1>
+            <h1 className="header__logo">Saige <span className="text-primary"> Clothing Mall</span></h1>
             <div className="header__search">
                 <SearchIcon />
                 <input type="text" placeholder="search"/>
