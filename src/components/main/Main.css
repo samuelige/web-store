@@ -1,0 +1,38 @@
+/* * {
+  padding: 0;
+} */
+
+main {
+  grid-area: main;
+}
+
+.main {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; */
+  background-size: contain;
+  flex: 3;
+  background-color: rgb(167, 179, 164);
+}
+
+.main__header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 250px;
+  background-color: #e6e5cc;
+  margin-top: 30px;
+  margin-right: 300px;
+}
+
+.main__header > .home {
+  margin-left: 50px;
+  font-weight: lighter;
+  font-size: small;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+  /* flex: 1; */
+}

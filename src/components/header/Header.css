@@ -1,0 +1,38 @@
+header {
+  grid-area: header;
+}
+.header {
+  background-color: rgb(140, 140, 130);
+  color: #e6e5cc;
+  display: flex;
+  align-content: center;
+}
+.header__logo {
+  margin-left: 40px;
+}
+.header__search {
+  display: flex;
+  align-items: center;
+  color: #e6e5cc;
+  margin-left: 30%;
+  border-radius: 3px;
+  padding: 3px;
+}
+.header__search > input {
+  background-color: transparent;
+  outline-width: 0;
+  color: rgb(140, 140, 130);
+  background-color: #e6e5cc;
+  border: none;
+  padding: 10px;
+  margin-right: 280px;
+}
+
+.header__icons > .MuiSvgIcon-root {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.header__search > .MuiSvgIcon-root {
+  cursor: pointer;
+}
