@@ -1,7 +1,3 @@
-/* * {
-  padding: 0;
-} */
-
 main {
   grid-area: main;
 }
@@ -10,9 +6,7 @@ main {
   display: inline-block;
   position: relative;
   width: 100%;
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; */
+  height: 100vh;
   background-size: contain;
   flex: 3;
   background-color: rgb(167, 179, 164);
@@ -34,5 +28,8 @@ main {
   margin-top: 20px;
   text-align: center;
   cursor: pointer;
-  /* flex: 1; */
+}
+
+.main__header > .home:hover {
+  border-bottom: solid #713624;
 }

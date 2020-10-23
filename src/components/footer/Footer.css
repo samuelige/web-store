@@ -7,4 +7,5 @@ footer {
   color: #e6e5cc;
   display: flex;
   justify-content: center;
+  height: 20vh;
 }
