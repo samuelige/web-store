@@ -21,7 +21,7 @@ const Directory = () => {
             title: 'Women',
             imageURL: 'https://www.poynter.org/wp-content/uploads/2020/08/The-19th-Group-01.jpg',
             id: uuidv4(),
-            onClick: handleWemenClick = () => history.push('/wendirectory')
+            onClick: handleWemenClick = () => history.push('/womendirectory')
         }
     ]
     })
