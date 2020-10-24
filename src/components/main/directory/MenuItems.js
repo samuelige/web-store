@@ -4,12 +4,9 @@ import './MenuItems.css'
 import { useHistory } from "react-router-dom";
 
 
-const MenuItems = ({title, imageUrl, linkUrl, match}) => {
-    let history = useHistory();
-    const handleClick = () => history.push('/mendirectory')
-    console.log(history)
+const MenuItems = ({title, imageUrl, onClick}) => {
     return (
-        <div className="menu__item" onClick={handleClick}>
+        <div className="menu__item" onClick={onClick}>
             <div className="background__image" style={{backgroundImage:`url(${imageUrl})`}}/>
             <div className="cr-be">
                 <div className="title">{title}</div>
