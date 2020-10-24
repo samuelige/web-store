@@ -10,12 +10,14 @@ const Directory = () => {
         sections: [{
             title: 'Men',
             imageURL: 'https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/11/18/11/international-mens-day-main.jpg',
-            id: uuidv4()
+            id: uuidv4(),
+            // linkUrl: 'mendirectory'
         },
         {
             title: 'Women',
             imageURL: 'https://www.poynter.org/wp-content/uploads/2020/08/The-19th-Group-01.jpg',
-            id: uuidv4()
+            id: uuidv4(),
+            // linkUrl: 'womendirectory'
         }
     ]
     })
@@ -23,7 +25,7 @@ const Directory = () => {
     return (
         
         <div className="main__directory">
-            {state.sections.map(item => <MenuItems key={item.id} title={item.title} imageUrl={item.imageURL}/>)}
+            {state.sections.map(item => <MenuItems key={item.id} title={item.title} imageUrl={item.imageURL} />)}
         </div>
     )
 }

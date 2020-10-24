@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
 
-const directory = () => {
+const MenDirectory = () => {
     const [state, setstate] = useState({
         sections: [{
             title: 'Hats',
@@ -17,9 +17,9 @@ const directory = () => {
     })
     return (
         <div>
-            
+            <h1>Men Directory</h1>
         </div>
     )
 }
 
-export default directory
+export default MenDirectory

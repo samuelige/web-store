@@ -8,9 +8,18 @@
   border: 1px solid black;
   margin: 0 7.5px 15px;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.background__image {
+  height: 100%;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-size: auto; */
+}
+.background__image:hover {
+  transform: scale(1.1);
+  transition: transform 6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .cr-be {
@@ -19,20 +28,22 @@
   height: 50px;
   padding: 15px 15px 5px 15px;
   cursor: pointer;
+  opacity: 0.7;
+  position: absolute;
 }
 .cr-be:hover {
   background-color: #713624;
-  color: #ffffff;
+  color: #e6e5cc;
+  transform: scale(1.1);
+  transition: transform 6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-
 .title {
   font-weight: bold;
   margin-bottom: 6px;
   font-size: 22px;
   text-align: center;
-  color: #ffffff;
+  color: #e6e5cc;
 }
-
 .subtitle {
   font-weight: lighter;
   font-size: 16px;
