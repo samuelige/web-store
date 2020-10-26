@@ -1,7 +1,5 @@
 import React from 'react'
 import './MenuItems.css'
-// import { withRouter } from "react-router";
-import { useHistory } from "react-router-dom";
 
 
 const MenuItems = ({title, imageUrl, onClick}) => {
