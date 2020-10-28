@@ -10,5 +10,4 @@ main {
   background-size: contain;
   flex: 3;
   background-color: rgb(167, 179, 164);
-  /* overflow: hidden; */
 }

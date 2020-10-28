@@ -12,7 +12,7 @@ const Shop = () => {
         <div>
             <h1 className='shop-title'>Shop</h1>
             <div className="shop__directory">
-                {sections && sections.shop?.map((items)=>
+                {sections && sections.shop.map((items)=>
                 <ShopItem key={items.id} title={items.title} items={items.items}  />)}
             </div>
         </div>

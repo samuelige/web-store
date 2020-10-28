@@ -28,4 +28,34 @@ const config = {
 //  sign in with a pop-up window
   export const signInWithGoogle = () => auth.signInWithPopup(provider);
 
+//  Take the user off object from the we got back from our authentication libray
+// Then store it inside of our database
+
+export const createUserProfileDocument = async (userAuth, additionalData) => {
+  if(!userAuth) return;
+
+  const userRef = firestore.doc(`users/${userAuth.uid}`);
+  const snapShot = await userRef.get();
+
+  if(!snapShot.exists) {
+    const {displayName, email} = userAuth;
+    const createdAt = new Date();
+
+    try {
+      await userRef.set({
+        displayName,
+        email,
+        createdAt,
+        ...additionalData
+      })
+    } catch (error) {
+      console.log('error creating user', error.message)
+    }
+  }
+  return userRef;
+}
+
+
+
+
   export default firebase;
