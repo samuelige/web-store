@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { auth } from '../../../Firebase/firebase.utils'
+import { auth, createUserProfileDocument } from '../../../Firebase/firebase.utils'
 import Directory from '../directory/MainDirectory'
 import NavBar from '../NavBar'
 import './Main.css'
@@ -13,8 +13,20 @@ const Main = () => {
     let unsubscribeFromAuth = null;
     
     useEffect(() => {
-        unsubscribeFromAuth = auth.onAuthStateChanged((user) => {
-            setState({currentUser:user});
+        unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+            if (userAuth) {
+                const userRef = await createUserProfileDocument(userAuth);
+                
+                userRef.onSnapshot(snapShot => {
+                    setState({
+                        currentUser: {
+                            id: snapShot.id,
+                            ...snapShot.data()
+                        }
+                    }); 
+                })
+            }
+            setState({currentUser:userAuth})
         })
         unsubscribeFromAuth();
     }, [])
