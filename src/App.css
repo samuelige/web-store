@@ -1,3 +1,7 @@
 app {
   overflow: hidden;
 }
+
+* {
+  box-sizing: border-box;
+}

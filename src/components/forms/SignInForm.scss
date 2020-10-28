@@ -1,9 +1,25 @@
 .sign-in {
-  width: 30vw;
+  width: 380px;
   display: flex;
   flex-direction: column;
 
   .title {
     margin: 10px 0;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+
+    .google {
+      background-color: #4285f4;
+      color: white;
+
+      &:hover {
+        background-color: #357ae8;
+        border: none;
+      }
+    }
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import './Homepage.css';
 import Footer from '../../footer/Footer';
 import Header from '../../header/Header';
-import Main from '../../main/Main';
+import Main from '../../main/pages/Main';
 import Sidebar from '../../sidebar/Sidebar';
 
 function Homepage() {

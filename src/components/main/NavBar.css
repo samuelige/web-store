@@ -1,0 +1,21 @@
+.nav__header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: 250px;
+  background-color: #e6e5cc;
+  margin-right: 300px;
+}
+
+.nav__header > .home {
+  margin-left: 50px;
+  font-weight: lighter;
+  font-size: small;
+  margin-top: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav__header > .home:hover {
+  border-bottom: solid #713624;
+}
