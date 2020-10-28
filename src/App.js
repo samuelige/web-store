@@ -6,6 +6,7 @@ import MenDirectory from './components/main/directory/MenDirectory'
 import WomenDirectory from './components/main/directory/WomenDirectory'
 import Contact from './components/pages/Contact/Contact'
 import SignIn from './components/pages/SignIn/SignIn'
+// import { auth } from './Firebase/firebase.utils'
 
 
 const App = () => {

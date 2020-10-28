@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { signInWithGoogle } from '../../Firebase/firebase.utils';
 import CustomButton from './form-custom-button/customButton';
 import FormInput from './FormInput';
 import './SignInForm.scss'
@@ -30,9 +31,14 @@ const SignInForm = () => {
                 <FormInput name="email" type='email' value={state.email} handleChange={handleChange} label="Email" required/>
                     
                 <FormInput name="password" type='password' value={state.password} handleChange={handleChange} label="Password" required/>
-                
-    
+                <div className="btn">
                 <CustomButton type="submit">SIGN IN</CustomButton>
+                <CustomButton className="google" onClick={signInWithGoogle}>Sign in with Google</CustomButton>
+                </div>
+                
+                
+
+                
             </form>
         </div>
     )
