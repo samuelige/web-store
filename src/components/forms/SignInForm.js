@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { signInWithGoogle } from '../../Firebase/firebase.utils';
+import { auth, signInWithGoogle } from '../../Firebase/firebase.utils';
 import CustomButton from './form-custom-button/customButton';
 import FormInput from './FormInput';
 import './SignInForm.scss'
@@ -16,10 +16,18 @@ const SignInForm = () => {
 
         setState({[name]: value});
     }
-    const handleSubmit = (e) => {
-        e.preventDefault();
 
-        setState({email: '', password: ''}); //Set the input field back to an empty string
+    const handleSubmit = async event => {
+        event.preventDefault();
+        const {email, password} = state;
+        try {
+            await auth.signInWithEmailAndPassword(email, password);
+            setState({email: '', password: ''}); //Set the input field back to an empty string
+        } catch (error) {
+            console.log(error);
+        }
+
+        
     }
     console.log(state)
     return (

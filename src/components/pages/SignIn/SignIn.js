@@ -5,7 +5,7 @@ import NavBar from '../../main/NavBar'
 const SignIn = () => {
     return (
         <div>
-            <NavBar/>
+            <NavBar />
             <Form />
         </div>
     )
