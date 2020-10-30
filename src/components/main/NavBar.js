@@ -7,6 +7,7 @@ import VpnKeyOutlinedIcon from '@material-ui/icons/VpnKeyOutlined';
 import './NavBar.css'
 import {useHistory} from "react-router-dom";
 import { auth } from '../../Firebase/firebase.utils';
+import CartIcon from '../cart/cart-icon'
 
   
 const NavBar = ({currentUser}) => {
@@ -48,7 +49,11 @@ const NavBar = ({currentUser}) => {
                     <h2 onClick={handleSignIn}>SIGN IN</h2>
                 </div>
                 }
+                <div className="home">
+                    <CartIcon />
+                </div>
             </div>
+            
         </div>
 
     )
