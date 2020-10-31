@@ -4,7 +4,7 @@ import ShopItem from './ShopItem'
 import './Shop.css'
 
 const Shop = () => {
-    const {sections} = useSelector(state => state)
+    const {sections} = useSelector(state => state.shop)
 
     console.log(sections.shop, 'sections')
 
