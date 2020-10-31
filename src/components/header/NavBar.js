@@ -28,25 +28,20 @@ const NavBar = ({currentUser}) => {
         <div className="nav">
             <div className="nav__header">
                 <div className="home">
-                    {/* <HomeIcon /> */}
                     <h2 onClick={handleHome}>HOME</h2>
                 </div>
                 <div className="home">
-                    {/* <ShopIcon /> */}
                     <h2 onClick={handleShop}>SHOP</h2>
                 </div>
                 <div className="home">
-                    {/* <ContactsIcon /> */}
                     <h2 onClick={handleContact}>CONTACT</h2>
                 </div>
                 {currentUser ? 
                 <div className="home">
-                    {/* <ExitToAppIcon /> */}
                     <h2 onClick={()=> auth.signOut()}>SIGN OUT</h2>
                 </div>
                 :
                 <div className="home">
-                    {/* <VpnKeyOutlinedIcon /> */}
                     <h2 onClick={handleSignIn}>SIGN IN</h2>
                 </div>
                 }
