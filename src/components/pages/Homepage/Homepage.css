@@ -3,3 +3,6 @@
   flex-wrap: wrap;
   background-color: rgb(135, 136, 131);
 }
+* {
+  /* overflow: hidden; */
+}

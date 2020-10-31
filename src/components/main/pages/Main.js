@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { auth, createUserProfileDocument } from '../../../Firebase/firebase.utils'
 import Directory from '../directory/MainDirectory'
-import NavBar from '../NavBar'
+import NavBar from '../../header/NavBar'
 import './Main.css'
-
 
 const Main = () => {
     const [state, setState] = useState({
@@ -32,7 +31,7 @@ const Main = () => {
     }, [])
     return (
         <div className="main">
-            <NavBar currentUser={state.currentUser}/>
+            {/* <NavBar currentUser={state.currentUser}/> */}
             <Directory />
         </div>
     )

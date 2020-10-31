@@ -6,12 +6,16 @@ import MenDirectory from './components/main/directory/MenDirectory'
 import WomenDirectory from './components/main/directory/WomenDirectory'
 import Contact from './components/pages/Contact/Contact'
 import SignIn from './components/pages/SignIn/SignIn'
+import Header from './components/header/Header'
+
+
 // import { auth } from './Firebase/firebase.utils'
 
 
 const App = () => {
     return (
         <div className="app">
+            <Header />
             <Switch>
                 <Route exact path='/' component={Homepage}/>
                 <Route exact path='/Shop' component={Shop}/>
@@ -20,8 +24,6 @@ const App = () => {
                 <Route path='/mendirectory' component={MenDirectory}/>
                 <Route path='/womendirectory' component={WomenDirectory}/>
             </Switch>
-
-            
         </div>
     )
 }

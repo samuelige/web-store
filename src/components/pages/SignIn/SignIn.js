@@ -1,11 +1,11 @@
 import React from 'react'
 import Form from '../../forms/Form'
-import NavBar from '../../main/NavBar'
+// import NavBar from '../../main/NavBar'
 
 const SignIn = () => {
     return (
         <div>
-            <NavBar />
+            {/* <NavBar /> */}
             <Form />
         </div>
     )

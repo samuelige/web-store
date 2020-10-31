@@ -5,6 +5,7 @@ import AddLocationIcon from '@material-ui/icons/AddLocation';
 import HelpIcon from '@material-ui/icons/Help';
 
 import './Header.css'
+import NavBar from './NavBar';
 
 const Header = () => {
     return (
@@ -13,11 +14,13 @@ const Header = () => {
             <div className="header__search">
                 <SearchIcon />
                 <input type="text" placeholder="search"/>
-                <div className="header__icons">
+                {/* <div className="header__icons">
                     <NotificationsIcon />
                     <AddLocationIcon />
                     <HelpIcon />
-                </div>
+                </div> */}
+            <NavBar	 />
+
             </div>
             
 
