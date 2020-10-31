@@ -8,6 +8,7 @@ import './NavBar.css'
 import {useHistory} from "react-router-dom";
 import { auth } from '../../Firebase/firebase.utils';
 import CartIcon from '../cart/cart-icon'
+import CartDropdown from '../cart/CartDropdown';
 
   
 const NavBar = ({currentUser}) => {
@@ -53,7 +54,7 @@ const NavBar = ({currentUser}) => {
                     <CartIcon />
                 </div>
             </div>
-            
+            <CartDropdown />
         </div>
 
     )
