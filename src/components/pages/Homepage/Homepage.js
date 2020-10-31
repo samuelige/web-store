@@ -9,7 +9,7 @@ function Homepage() {
   return (
     <div className="App">
       <div className="grid-container">
-      <Header />
+      {/* <Header /> */}
       <div className="content">
         <Sidebar />
         <Main />

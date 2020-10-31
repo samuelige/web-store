@@ -1,17 +1,13 @@
 .nav__header {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10px;
-  margin-left: 250px;
-  background-color: #e6e5cc;
-  margin-right: 300px;
+  margin-left: 100px;
 }
 
 .nav__header > .home {
-  margin-left: 50px;
+  margin-left: 10px;
   font-weight: lighter;
   font-size: small;
-  margin-top: 5px;
   text-align: center;
   cursor: pointer;
 }

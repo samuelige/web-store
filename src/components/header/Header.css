@@ -14,7 +14,7 @@ header {
   display: flex;
   align-items: center;
   color: #e6e5cc;
-  margin-left: 30%;
+  margin-left: 10%;
   border-radius: 3px;
   padding: 3px;
 }
@@ -25,14 +25,14 @@ header {
   background-color: #e6e5cc;
   border: none;
   padding: 10px;
-  margin-right: 280px;
+  /* margin-right: 280px; */
 }
 
-.header__icons > .MuiSvgIcon-root {
+/* .header__icons > .MuiSvgIcon-root {
   padding: 5px;
   cursor: pointer;
 }
 
 .header__search > .MuiSvgIcon-root {
   cursor: pointer;
-}
+} */
