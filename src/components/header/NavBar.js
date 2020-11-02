@@ -9,9 +9,16 @@ import {useHistory} from "react-router-dom";
 import { auth } from '../../Firebase/firebase.utils';
 import CartIcon from '../cart/cart-icon'
 import CartDropdown from '../cart/CartDropdown';
+import { useSelector } from 'react-redux';
+
+
 
   
 const NavBar = ({currentUser}) => {
+
+    const {hidden} = useSelector(state => state.cart);
+    console.log(hidden);
+
 
     // router
     const history = useHistory();
@@ -49,7 +56,9 @@ const NavBar = ({currentUser}) => {
                     <CartIcon />
                 </div>
             </div>
-            <CartDropdown />
+            {
+            !hidden && <CartDropdown />
+            }
         </div>
 
     )
